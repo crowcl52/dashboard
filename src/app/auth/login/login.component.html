@@ -29,7 +29,10 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <button class="btn btn-primary submit-btn btn-block">Login</button>
+                  <button *ngIf="!loading" class="btn btn-primary submit-btn btn-block">Login</button>
+                  <button *ngIf="loading" disabled class="btn btn-primary submit-btn btn-block">
+                      <i class="fas fa-spin fa-sync"></i>
+                    </button>
                 </div>
                 
                 
