@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
   constructor( public auth:AuthService, public store: Store<AppState> ) { }
 
   loading: boolean = false;
-  subscription: Subscription;
+  subscription: Subscription = new Subscription();
 
   ngOnInit() {
    this.subscription = this.store.select('ui').subscribe(ui =>{
