@@ -2,3 +2,24 @@
 .cursor{
     cursor: pointer;
 }
+
+.movile-nav{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    background: white;
+    margin: 0;
+}
+
+.nav-mob-item{
+    color: gray;
+    font-size: 2rem;
+}
+
+.router-link-active{
+    color:#316d92;
+}
